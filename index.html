@@ -1,0 +1,30 @@
+ad<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Michit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1>Login</h1>
+	<form action="/action_page.php">
+		<input type="username" placeholder="username" id="fname" name="fname"><br><br>
+      <input type="password" placeholder="password" id="lname" name="lname" onkeypress="enterKeyPressed(event)"><br><br>
+    </form>
+    <script src="script.js"></script>
+<script>
+   function enterKeyPressed(event) {
+      if (event.keyCode == 13) {
+         window.open("userpage.html", "_self");
+         return true;
+      } else {
+         return false;
+      }
+   }
+</script>
+    <script src="https://kit.fontawesome.com/552b5fc58a.js" crossorigin="anonymous"></script>
+  </body>
+</html>
